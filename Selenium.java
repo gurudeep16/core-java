@@ -1,0 +1,2 @@
+class Selenium extends TestingTool{
+}

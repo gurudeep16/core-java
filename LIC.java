@@ -1,0 +1,4 @@
+class LIC extends Insurance
+{
+
+}
