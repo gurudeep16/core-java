@@ -1,4 +1,0 @@
-class MSDhoni extends CricketPlyer
-{
-
-}

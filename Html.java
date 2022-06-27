@@ -1,2 +1,0 @@
-class Html extends WebTech{
-}

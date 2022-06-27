@@ -1,2 +1,0 @@
-class Ksrtc extends ModeOfTransport{
-}
