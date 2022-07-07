@@ -1,5 +1,5 @@
-class Ipl{
-	public Ipl(){
+class IplDTO{
+	public IplDTO(){
 	}
   private String gameOf;
   private String type;
@@ -43,8 +43,8 @@ class Ipl{
 	 }
 	 
 	 
-  public void ipl(){
+ /* public void ipl(){
 	  System.out.println("IPL andre RCB");
-  }
+  }*/
 	
 }

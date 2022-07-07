@@ -1,5 +1,5 @@
-class Stadium{
-	public Stadium(){
+class StadiumDTO{
+	public StadiumDTO(){
 	}
   private String name;
   private String location;
@@ -43,8 +43,8 @@ class Stadium{
 	 }
 	 
 	 
-  public void watchMatch(){
+ /* public void watchMatch(){
 	  System.out.println("Match nodlike maja");
-  }
+  }*/
 	
 }

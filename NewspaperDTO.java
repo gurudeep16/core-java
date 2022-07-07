@@ -1,11 +1,11 @@
-class MusicPlayer{
-	public MusicPlayer(){
+class NewspaperDTO{
+	public NewspaperDTO(){
 	}
   private String name;
   private String type;
   private double price;
-  private String brand;
-  private String size;
+  private String publications;
+  private String language;
 
      public String getName(){
 	  return name;
@@ -28,23 +28,23 @@ class MusicPlayer{
 		 this.price=price;
 	 }
 	 
-	 public String getBrand(){
-		 return brand;
+	 public String getPublications(){
+		 return publications;
 	 }
-	 public void setBrand(String brand){
-		 this.brand=brand;
-	 }
-	 
-	 public String getSize(){
-		 return size;
-	 }
-	 public void setSize(String size){
-		 this.size=size;
+	 public void setPublications(String publications){
+		 this.publications=publications;
 	 }
 	 
+	 public String getLanguage(){
+		 return language;
+	 }
+	 public void setLanguage(String language){
+		 this.language=language;
+	 }
 	 
-  public void listen(){
-	  System.out.println("listen n enjoy");
-  }
+	 
+ /* public void read(){
+	  System.out.println("read it daily");
+  }*/
 	
 }

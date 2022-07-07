@@ -1,5 +1,5 @@
-class Oximeter{
-	public Oximeter(){
+class OximeterDTO{
+	public OximeterDTO(){
 	}
   private String method;
   private String type;
@@ -35,8 +35,8 @@ class Oximeter{
 	 }
 	 
 	 
-  public void accuracy(){
+ /* public void accuracy(){
 	  System.out.println("only 2% accuracy");
-  }
+  }*/
 	
 }

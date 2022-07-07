@@ -1,5 +1,5 @@
-class BigBasket{
-	public BigBasket(){
+class BigBasketDTO{
+	public BigBasketDTO(){
 	}
   private String ownedBy;
   private String type;
@@ -35,8 +35,8 @@ class BigBasket{
 	 }
 	 
 	 
-  public void bigb(){
+ /* public void bigb(){
 	  System.out.println("Order groceries online");
-  }
+  }*/
 	
 }

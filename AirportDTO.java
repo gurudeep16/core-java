@@ -1,5 +1,5 @@
-class Airport{
-	public Airport(){
+class AirportDTO{
+	public AirportDTO(){
 	}
   private String name;
   private String location;
@@ -43,8 +43,8 @@ class Airport{
 	 }
 	 
 	 
-  public void youHaveTicket(){
+  /*public void youHaveTicket(){
 	  System.out.println("Travel in plane");
-  }
+  }*/
 	
 }

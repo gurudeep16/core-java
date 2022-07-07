@@ -1,7 +1,7 @@
 class StadiumTester{
 	public static void main(String a[]){
 		
-		Stadium sd = new Stadium();
+		StadiumDTO sd = new StadiumDTO();
 		sd.setName("Chinnaswamy");
 		sd.setLocation("Bengaluru");
 		sd.setEntryFee(2999);
@@ -10,7 +10,7 @@ class StadiumTester{
 		
 		
 		System.out.println(sd.getName()+":"+sd.getLocation()+":"+sd.getEntryFee()+":"+sd.getMatch()+":"+sd.getSeatNo());
-		sd.watchMatch();
+		//sd.watchMatch();
 	}
 	
 	

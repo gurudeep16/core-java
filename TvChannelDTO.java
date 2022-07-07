@@ -1,5 +1,5 @@
-class TvChannel{
-	public TvChannel(){
+class TvChannelDTO{
+	public TvChannelDTO(){
 	}
   private String channelName;
   private String type;
@@ -35,8 +35,8 @@ class TvChannel{
 	 }
 	 
 	 
-  public void news(){
+ /* public void news(){
 	  System.out.println("Nirantara suddigagi nodta iri TV9");
-  }
+  }*/
 	
 }

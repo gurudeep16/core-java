@@ -1,7 +1,7 @@
 class IplTester{
 	public static void main(String a[]){
 		
-		Ipl ip = new Ipl();
+		IplDTO ip = new IplDTO();
 		ip.setGameOf("Cricket");
 		ip.setType("Domestic");
 		ip.setSponser("TATA");
@@ -10,7 +10,7 @@ class IplTester{
 		
 		
 		System.out.println(ip.getGameOf()+":"+ip.getType()+":"+ip.getSponser()+":"+ip.getManagedBy()+":"+ip.getTeams());
-		ip.ipl();
+		//ip.ipl();
 	}
 	
 	

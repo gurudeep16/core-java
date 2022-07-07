@@ -1,9 +1,9 @@
-class Games{
-	public Games(){
+class WeaponDTO{
+	public WeaponDTO(){
 	}
   private String name;
   private String type;
-  private int totalPlayers;
+  private double range;
   private String origin;
 
      public String getName(){
@@ -20,11 +20,11 @@ class Games{
 		 this.type=type;
 	 }
 	 
-	 public int getTotalPlayers(){
-		 return totalPlayers;
+	 public double getRange(){
+		 return range;
 	 }
-	 public void setTotalPlayers(int totalPlayers){
-		 this.totalPlayers=totalPlayers;
+	 public void setRange(double range){
+		 this.range=range;
 	 }
 	 
 	 public String getOrigin(){
@@ -35,8 +35,8 @@ class Games{
 	 }
 	 
 	 
-  public void pubg(){
-	  System.out.println("Iga ban agide");
-  }
+  /*public void pistol(){
+	  System.out.println("Entada....shoot madbeka");
+  }*/
 	
 }

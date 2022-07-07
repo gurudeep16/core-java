@@ -1,11 +1,11 @@
-class Novel{
-	public Novel(){
+class MusicPlayerDTO{
+	public MusicPlayerDTO(){
 	}
   private String name;
   private String type;
   private double price;
-  private String author;
-  private int edition;
+  private String brand;
+  private String size;
 
      public String getName(){
 	  return name;
@@ -28,23 +28,23 @@ class Novel{
 		 this.price=price;
 	 }
 	 
-	 public String getAuthor(){
-		 return author;
+	 public String getBrand(){
+		 return brand;
 	 }
-	 public void setAuthor(String author){
-		 this.author=author;
-	 }
-	 
-	 public int getEdition(){
-		 return edition;
-	 }
-	 public void setEdition(int edition){
-		 this.edition=edition;
+	 public void setBrand(String brand){
+		 this.brand=brand;
 	 }
 	 
+	 public String getSize(){
+		 return size;
+	 }
+	 public void setSize(String size){
+		 this.size=size;
+	 }
 	 
-  public void read(){
-	  System.out.println("read the novel");
-  }
+	 
+  /*public void listen(){
+	  System.out.println("listen n enjoy");
+  }*/
 	
 }

@@ -1,7 +1,7 @@
 class TvTester{
 	public static void main(String a[]){
 		
-		TvChannel tc = new TvChannel();
+		TvChannelDTO tc = new TvChannelDTO();
 		tc.setChannelName("ABCPL");
 		tc.setType("News Channel");
 		tc.setStartedIn(2006);
@@ -9,7 +9,7 @@ class TvTester{
 		
 		
 		System.out.println(tc.getChannelName()+":"+tc.getType()+":"+tc.getStartedIn()+":"+tc.getLanguage());
-		tc.news();
+		//tc.news();
 	}
 	
 	

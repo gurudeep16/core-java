@@ -1,7 +1,7 @@
 class OximTester{
 	public static void main(String a[]){
 		
-		Oximeter om = new Oximeter();
+		OximeterDTO om = new OximeterDTO();
 		om.setMethod("noninvasive");
 		om.setType("Pulse oximeter");
 		om.setDevelopedIn(1935);
@@ -9,7 +9,7 @@ class OximTester{
 		
 		
 		System.out.println(om.getMethod()+":"+om.getType()+":"+om.getDevelopedIn()+":"+om.getOrigin());
-		om.accuracy();
+		//om.accuracy();
 	}
 	
 	

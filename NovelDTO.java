@@ -1,11 +1,11 @@
-class Newspaper{
-	public Newspaper(){
+class NovelDTO{
+	public NovelDTO(){
 	}
   private String name;
   private String type;
   private double price;
-  private String publications;
-  private String language;
+  private String author;
+  private int edition;
 
      public String getName(){
 	  return name;
@@ -28,23 +28,23 @@ class Newspaper{
 		 this.price=price;
 	 }
 	 
-	 public String getPublications(){
-		 return publications;
+	 public String getAuthor(){
+		 return author;
 	 }
-	 public void setPublications(String publications){
-		 this.publications=publications;
-	 }
-	 
-	 public String getLanguage(){
-		 return language;
-	 }
-	 public void setLanguage(String language){
-		 this.language=language;
+	 public void setAuthor(String author){
+		 this.author=author;
 	 }
 	 
+	 public int getEdition(){
+		 return edition;
+	 }
+	 public void setEdition(int edition){
+		 this.edition=edition;
+	 }
 	 
-  public void read(){
-	  System.out.println("read it daily");
-  }
+	 
+ /* public void read(){
+	  System.out.println("read the novel");
+  }*/
 	
 }
