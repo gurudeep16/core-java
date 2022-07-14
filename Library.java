@@ -30,4 +30,18 @@ class Library
 			System.out.println(dtos[i].getId()+ " : "+dtos[i].getName()+ " : "+dtos[i].getAuthor()+ " : "+dtos[i].getPublishedIn()+ ": "+dtos[i].getStream());
 		}
 	}
+	 public boolean updateNameById(int id,String name){
+		System.out.println("inside updateName");
+		   boolean updatedName=false;
+		for(int i=0;i<dtos.length;i++){
+			if(dtos[i].getId()==id){
+				dtos[i].setName(name);
+				updatedName=true;
+				System.out.println("updated successfully");
+			}
+			else{
+				System.out.println("not updated");
+			}
+		}
+		return updatedName;
 }

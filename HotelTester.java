@@ -29,5 +29,11 @@ class HotelTester{
 		
 	}
 	ht.getMenu();
+	 System.out.println("enter existing id");
+		 int existingId = sc.nextInt();
+		 System.out.println("enter new name");
+		 String updatedName = sc.next();
+		ht.updateNamesById(existingId,updatedName);
+		ht.getFoodMenu();
  }
 }

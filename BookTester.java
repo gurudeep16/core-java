@@ -34,6 +34,12 @@ class BookTester
 		}
 		
 		lb.getBooks();
+		 System.out.println("enter existing id");
+		 int existingId = sc.nextInt();
+		 System.out.println("enter new name");
+		 String updatedName = sc.next();
+		lb.updateNamesById(existingId,updatedName);
+		lb.getBooks();
 	}
 	
 }
