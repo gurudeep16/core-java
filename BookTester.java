@@ -33,7 +33,23 @@ class BookTester
 			lb.readAndGrow(bk);
 		}
 		
-		lb.getBooks();
+		
+		System.out.print("Entre the existing Id for update Book name : ");
+	   int existingId = sc.nextInt();
+	   System.out.print("Entre the updated Book name : ");
+	   String updateName=sc.next();
+	   lb.updateBookNameById(existingId , updateName);
+	   lb.getBooks();
+	   
+	   System.out.print("Enter the existing name for delete Book: ");
+	   String existingName = sc.next();
+	   lb.deleteBookByName(existingName);
+	   lb.getBooks();
+	   
+	   System.out.print("Enter the existing author for delete Book: ");
+	   String existingauthor = sc.next();
+	   lb.deleteBookByAuthor(existingauthor);
+	   lb.getBooks();
 	}
 	
 }

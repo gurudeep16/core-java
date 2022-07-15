@@ -31,6 +31,20 @@ class Airport1Tester{
 						
 		}
 		
+		/*a1.getTerminalDetails();
+		System.out.println("enter existing id");
+		 int existingId = sc.nextInt();
+		 System.out.println("enter new name");
+		 String updatedName = sc.next();
+		a1.updateNamesById(existingId,updatedName);*/
+		System.out.println("enter type");
+		String type1=sc.next();
+		
+		System.out.println("enter name");
+		String name=sc.next();
+		
+		a1.deleteByType(type1);
+		a1.deleteByAirportName(name);
 		a1.getTerminalDetails();
 	}
 

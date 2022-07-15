@@ -25,7 +25,24 @@ class EComTester
 			odr.setPrice(price);
 			
 			ec.shopping(odr);
-			ec.getItem();
+			
 		}
+		 ec.getItem();
+		System.out.println("Entre the ID of item : ");
+			int existingid = sc.nextInt();
+			System.out.println("Entre a Type of the item : ");
+			String existingtype = sc.next();
+			ec.updateTypeById(existingid, existingtype);
+	       
+			
+			System.out.print("Enter the existing type for delete order: ");
+	   String existingType1 = sc.next();
+	   ec.deleteOrderByType(existingType1);
+	   ec.getItem();
+	   
+	   System.out.print("Enter the existing Name for delete order: ");
+	   String existingName1 = sc.next();
+	   ec.deleteOrderByName(existingName1);
+	   ec.getItem();
 	}
 }

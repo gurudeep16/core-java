@@ -28,6 +28,22 @@ class HotelTester{
 		
 		
 	}
-	ht.getMenu();
+	/*ht.getMenu();
+	 System.out.println("enter existing id");
+		 int existingId = sc.nextInt();
+		 System.out.println("enter new name");
+		 String updatedName = sc.next();
+		ht.updateNamesById(existingId,updatedName);*/
+		
+		System.out.println("Enter name");
+		String names = sc.next();
+		
+		System.out.println("Enter type");
+		String type1=sc.next();
+		
+		
+		ht.deleteByName(names);
+		ht.deleteByType(type1);
+		ht.getMenu();
  }
 }
