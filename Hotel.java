@@ -46,6 +46,22 @@ class Hotel{
 		return updatedName;
 	}
 	
+	
+	public boolean updatePriceByName(String name,int price){
+		boolean updatePrice=false;
+		for(int i=0;i<dtos.length;i++){
+			if(dtos[i].getName().equals(name)){
+				dtos[i].setPrice(price);
+				updatePrice=true;
+				System.out.println("updated successfully");
+			}
+			else{
+				System.out.println("not updated");
+			}
+		}
+		return updatePrice;
+	}
+	
 	public boolean deleteByName(String name){
 		boolean deleted=false;
 		int i,j;
@@ -73,5 +89,23 @@ class Hotel{
 		dtos=Arrays.copyOf(dtos,i);
 		return deleted1;
 	}
+	
+	public String getFoodNameById(int id){
+	 String names=null;
+		for(int i=0;i<dtos.length;i++){
+			if(dtos[i].getId()==id){
+				names=dtos[i].getName();
+				System.out.println(dtos[i].getName());
+			}
+			else{
+				System.out.println("not found");
+			}
+		}
+		return names;
+	}
+	
+	
+	
+	
 	
 }

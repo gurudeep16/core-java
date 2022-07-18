@@ -30,21 +30,53 @@ class Airport1Tester{
 		a1.terminals(td);
 						
 		}
+		String option=null;
+		do{
+			System.out.println("Enter 1 to fetch terminal details");
+			System.out.println("Enter 2 to update terminal details");
+			System.out.println("Enter 3 to delete terminal details by type");
+			System.out.println("Enter 4 to delete terminala details by name");
+			
+			
+			System.out.println("Enter the choice");
+			int choice = sc.nextInt();
+			
+		switch(choice){
+			case 1 : ht.getPatientDetails();
+			         break;
+					 
+			case 2 : System.out.println("enter existing id");
+		             int existingId = sc.nextInt();
+		             System.out.println("enter new name");
+		             String updatedName = sc.next();
+		             a1.updateNamesById(existingId,updatedName);*/
+					 break;
+					 
+			case 3 : System.out.println("enter type");
+		             String type1=sc.next();
+					 a1.deleteByType(type1);
+					 break;
+				
+					 
+			case 4   System.out.println("enter name");
+		             String name=sc.next();
+		             a1.deleteByAirportName(name);
+					 break;
+					 
+					 
+			default : System.out.println("Enter the proper number");
+			         break;
+				
+		}	
+		System.out.println("Do you want to continue Y/N");				
+			option = sc.next();
+		}
+		while(option.equals("Y"));
 		
-		/*a1.getTerminalDetails();
-		System.out.println("enter existing id");
-		 int existingId = sc.nextInt();
-		 System.out.println("enter new name");
-		 String updatedName = sc.next();
-		a1.updateNamesById(existingId,updatedName);*/
-		System.out.println("enter type");
-		String type1=sc.next();
 		
-		System.out.println("enter name");
-		String name=sc.next();
 		
-		a1.deleteByType(type1);
-		a1.deleteByAirportName(name);
+		
+		
 		a1.getTerminalDetails();
 	}
 
