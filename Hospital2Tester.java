@@ -36,6 +36,8 @@ class Hospital2Tester{
 			System.out.println("Enter 3 to delete patient details by name");
 			System.out.println("Enter 4 to get patient contactNo by name");
 			System.out.println("Enter 5 to get patient name by id");
+			System.out.println("Enter 6 to delete patient name by address");
+			
 			
 			
 			System.out.println("Enter the choice");
@@ -68,6 +70,16 @@ class Hospital2Tester{
 		             int id1 = sc.nextInt();
 		             ht.getPatientNameById(id1);
 					 break;
+					 
+			case 6 : System.out.print("Enter existing name : ");
+			         String names3 = sc.next();
+		             ht.deletePatientByName(names3);
+					 break;
+			
+			case 7 : System.out.print("Enter the Gender for delete patient : ");
+	                 String exGender = sc.next();
+	                 ht.deletePatientByGender(Gender.valueOf(exGender));
+				     break;
 					 
 			default : System.out.println("Enter the proper number");
 			         break;

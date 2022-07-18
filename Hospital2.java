@@ -98,5 +98,41 @@ class Hospital2 {
 		return patientContNo;
 	}
 	
+	boolean deletePatientByAddress(String address)
+	{ 
+		boolean deletePatient1=false;
+		int i , j;
+		for( i=0,j=0;j<dtos.length;j++)
+		{
+			if(!dtos[j].getAddress().equals(address))
+			{				
+				dtos[i++]=dtos[j];
+				deletePatient1=true;
+				System.out.println("Deleted successfully");				
+			}
+         						
+		}
+		dtos=Arrays.copyOf(dtos,j);
+		return deletePatient1;
+	}
+	
+	boolean deletePatientByGender(Gender gender)
+	{ 
+		boolean deletePatientG=false;
+		int i , j;
+		for( i=0,j=0;j<dtos.length;j++)
+		{
+			if(!dtos[j].getGender().equals(gender))
+			{				
+				dtos[i++]=dtos[j];
+				deletePatientG=true;
+				System.out.println("Deleted successfully");				
+			}
+         						
+		}
+		dtos=Arrays.copyOf(dtos,j);
+		return deletePatientG;
+	}
+	
 	
 }
