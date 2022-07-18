@@ -23,7 +23,7 @@ class E_commerce
 		for(int i=0;i<dtos.length;i++)
 		{
 			System.out.println("Cart details : ");
-			System.out.println(dtos[i].getId()+ " : "+dtos[i].getType()+ ":  "+dtos[i].getName()+ ": "+dtos[i].getPrice());
+			System.out.println(dtos[i]);
 		}
 	}
 	boolean updateTypeById(int id , String type)
@@ -74,4 +74,31 @@ class E_commerce
 		dtos=Arrays.copyOf(dtos,i);
 		return deleteOrder;
 	}
+	
+	String getOrderNameById(int id)
+	{
+		String name=null;
+		for(int i=0;i<dtos.length;i++)
+		if(dtos[i].getId() == id)
+		{
+			name=dtos[i].getName();
+			System.out.println("Name of the Order : "+dtos[i].getName());
+		}
+		return name;
+	}
+	
+	String getOrderTypeByName(String name)
+	{
+		String type=null;
+		for(int i=0;i<dtos.length;i++){
+		if(dtos[i].getName().equals(name))
+		{
+			type=dtos[i].getType();
+			System.out.println("Type of the Order : "+dtos[i].getType());
+		}
+		}
+		return type;
+	}
+	
+	
 }
