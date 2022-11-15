@@ -1,0 +1,70 @@
+@charset "ISO-8859-1";
+#page1{
+    background-image: url(https://images.moneycontrol.com/static-mcnews/2021/06/Bank-representational-shutterstock.jpg?impolicy=website&width=770&height=431);
+    background-repeat: no-repeat;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    
+}
+h2{
+    color: rgb(13, 78, 139);
+    font-size: 30px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+h2:hover{
+  color: rgba(255, 217, 0, 0.596);
+ 
+}
+body{
+    background-color: rgba(0, 0, 255, 0.308);
+}
+.a{
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius:5px ;
+   
+}
+
+
+.b{
+    
+    
+    font-style: italic;
+    margin-left: 400px;
+   
+}
+.b1{
+    font-size: larger;
+    color: rgb(57, 20, 220);
+}
+.b1:hover{
+    color: rgb(22, 22, 87);
+}
+
+.c{
+    border: 1px solid blueviolet;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: large;
+    font-style: italic;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-radius: 5px;
+    margin-left: 500px;
+
+}
+.c:hover{
+    background-color:white;
+    color: blueviolet;
+    
+}
+.d{
+    border: 1px solid;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+.d:hover{
+background-color: cornsilk;
+}
